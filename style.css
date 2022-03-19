@@ -1,0 +1,697 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Bahnschrift SemiBold;
+    background-color: black;
+}
+/* ...............Important line Don't delete............... */
+/* header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;   
+    z-index: 100000;
+    transition: 0.3s;
+    
+}
+
+header.sticky{
+    background: white;
+
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    transition: 0.5s;
+} */
+
+nav{
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: Baskerville Old Face;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+span{
+    color: rgb(255, 0, 102);
+}
+
+/* .logo::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background: rgb(255, 0, 102);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    margin-left: 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.logo:hover::after{
+    width: 73%;    
+} */
+
+/* .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(bg1.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 15px;
+    position: relative;
+    color: white;
+}
+ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-family: Baskerville Old Face;
+    letter-spacing: 2px;
+}
+
+
+/* nav ul li a.active{
+    background: rgb(255, 0, 102);
+    color: white;
+    width: 100%;
+    transition: .5s;
+} */
+
+nav ul li a:hover{
+    /* background: rgb(255, 0, 102); */
+    color: rgb(255, 0, 102);
+    width: 100%;
+    transition: .5s;
+}
+
+.btn{
+    background-color: rgb(255, 0, 102);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 3px 30px;
+    border-radius: 30px;
+    margin-top: 12px;
+    font-weight: bold;
+    font-family: Baskerville Old Face;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid rgb(255, 0, 102);
+    cursor: pointer;
+}
+
+button{
+    background-color: rgb(255, 0, 102);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 5px 30px;
+    margin: 15px 10px;
+    border-radius: 30px;
+    transition: .6s;
+    font-size: 20px;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(255, 0, 102);
+    cursor: pointer;
+    
+}
+
+/* ...................Important Don't Delete...................... */
+/* button{
+    width: 150px;
+    padding: 5px 0;
+    font-size: 19px;
+    text-align: center;
+    margin: 15px 10px;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 0, 102);
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: rgb(255, 0, 102);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+    
+}
+
+button:hover{
+    border: none;
+    color: white;
+    
+} */
+ 
+
+/* .btn{
+    padding: 5px 10px;
+    width: 150px;
+    background: rgb(255, 0, 102);
+    border: 2px solid rgb(255, 0, 102);
+    border-radius: 25px;
+    color: white;
+    margin: 12px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover{
+    background-color: green;
+    color: white;
+    border: none;
+} */
+
+.infocontainer{
+    height: 20vh;
+    width: 80vw;
+    margin: 130px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.devinfo{
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* margin: 0 15px; */
+}
+
+.hello{
+    font-size: 32px;
+    font-family: Microsoft PhagsPa; 
+}
+
+.name{
+    font-size: 42px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    margin: 0;
+}
+
+.about{
+    font-size: 25px;
+    font-family: Microsoft PhagsPa;
+    /* font-weight: bold; */
+}
+
+.moreabout{
+    font-size: 22px;
+    margin-top: 5px;
+    font-family: Calibri;
+    padding-bottom: 10px;
+}
+
+#section1{
+    margin-top: 300px;
+    display: inline-block;
+    width: 100%;
+    font-family: Baskerville Old Face;
+    color: white;
+}
+
+#section1 h2{
+    margin-top: 70px;
+    color: rgb(255, 0, 102);
+}
+/* .line{
+    width: 70px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 102);
+    margin: 0 auto;
+} */
+
+.intro{    
+    margin: 130px auto;
+    margin: 10%;
+    justify-content: space-around;   
+}
+.intro h2{
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+
+.intro h5{
+    letter-spacing: 1px;
+    font-size: 32px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-family: Century Schoolbook;
+}
+
+.intro p{
+    font-size: 23px;
+    font-family: Calibri;
+    font-weight: 520;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin-bottom: 15px;
+    /* margin-right: 10%; */
+}
+
+#section2{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+.title{
+    font-size: 55px;
+    text-align: center;
+    font-family: Baskerville Old Face;
+    color: rgb(255, 0, 102);
+    letter-spacing: 3px;
+    margin-top: 150px;
+}
+
+.wrapper{
+    display: grid;
+    margin: 100px 90px auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-gap: 20px;
+}
+.wrapper .box{
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    /* perspective: 1000px; */
+    cursor: pointer;
+}
+.wrapper .box .front-face{
+    background-color: white;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 5px 20px 0 rgba(0, 81, 50, 0.1);
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    
+}
+/* .wrapper .box .front-face span, */
+.wrapper .box .back-face span{
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+.box .front-face .icon{
+    /* height: 20px; */
+    margin-bottom: 25px;
+
+}
+/* .box .front-face .icon i,
+.box .front-face span{
+    background-color: aqua;
+} */
+
+.box .back-face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 0, 102);
+    z-index: 1;
+    color: black;
+    height: 220px;
+    width: 100%;
+    padding: 20px;
+    /* display: none; */
+    font-size: 19px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    opacity: 0;
+    backface-visibility: hidden;
+    transform: translateY(110px) rotateX(-90deg);
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+
+}
+.box .back-face p{
+    text-align: justify;
+    color: white;
+}
+.box:hover .back-face{
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+.box:hover .front-face{
+    opacity: 0;
+    transform: translateY(-110px) rotateX(90deg);
+}
+
+/* .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 365px;
+    padding: 20px 35px;
+    background-color: #191919;
+    border-radius: 20px;
+    margin: 15px;  
+    position: inherit;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img{
+    margin: 25px 0;
+}
+.card h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-family: Gill Sans MT;
+    letter-spacing: 1px;
+}
+.pra{
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+} */
+
+
+
+#section3{
+    color: white;
+    width: 100%;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+
+.contact{
+    font-size: 40px;
+    font-family: Baskerville Old Face;
+    color: rgb(255, 0, 102);
+    letter-spacing: 1px;
+    margin-top: 150px;
+}
+
+#section3 p{
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 100px;
+}
+
+footer{
+    position: relative;
+    /* width: 100%; */
+    height: 300px;
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    background-size: cover;
+    color: gray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+footer p:nth-child(1){
+    color: rgb(217, 217, 217);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+footer p:nth-child(2){
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+    line-height: 18px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 40px;
+    height: 40px;
+    margin: 12px 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    color: white;
+    border-radius: 50%;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: gray;
+    font-size: 17px;
+    bottom: 35px;
+}
+footer h3{
+    color: white;
+    font-size: 20px;
+    bottom: 40px;
+    font-family: Bradley Hand ITC;
+    letter-spacing: 2px;
+}
+footer h3 span{
+    color: gray;
+}
+
+/* .line{
+    width: 350px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: gray;
+    margin-top: 15px;
+} */
+
+.Up{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+@media screen and (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    form{
+        margin: 50px;
+    }
+    
+    
+}
+@media screen and (max-width: 952px){
+    .card{
+        flex-direction: column;
+        display: flex;
+    }
+}
+ @media screen and (max-width: 850px){
+    /* .checkbtn{
+        display: block;
+        
+    } */
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        background: rgb(255, 0, 102);
+        top: 80px;
+        left: -100%;
+        
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px auto;
+        /* background: #484872; */
+        line-height: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul li a{
+        font-size: 35px;
+    }
+
+    form{
+        margin: 30px;
+    }   
+    .intro h2{
+        font-size: 40px;
+    }
+    .intro h5{
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .intro p{
+        line-height: 27px;
+    }
+
+    .title h2{
+        margin-left: 13%;
+    }
+    
+
+    footer{
+        background-color: black;
+        
+    }
+
+@media screen and (min-width: 250px) and (max-width: 670px){
+    .hello{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .about{
+        font-size: 17px;
+    }
+    .title h2{
+        margin-left: -64%;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        margin-left: 10%;
+    }
+    #section3 p{
+        margin-left: 13%;
+        font-size: 25px;
+    }
+    .contact{
+        font-size: 25px;
+    }
+
+    footer h3{
+        font-size: 16px;
+        margin-left: 5%;
+        margin-bottom: 5px;
+        letter-spacing: normal;
+    }
+
+    .intro h2{
+        margin-top: 75px;
+    }
+}
+        
+}
+    
+    
+    /* .buttons, button,a
+    
+    {
+        position: relative;
+    }
+    .buttons, button,a
+    {
+        position: relative;
+    }
+    a:hover,a.active{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    } */
+
+
+ @media screen and (min-width: 280px) and (max-width: 653px){
+     #section1 h1{
+         margin-top: 110px;
+     }
+
+     
+ }
